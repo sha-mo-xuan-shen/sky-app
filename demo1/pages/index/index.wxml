@@ -1,5 +1,5 @@
 <!--index.wxml-->
-  <view class="container">
+<view class="container">
   <view>
     {{msg}}
   </view>
@@ -8,4 +8,11 @@
     昵称:{{nickName}}
     <image style="width: 100px;height: 100px;" src="{{url}}"></image>
   </view>
+  <view>
+    <button bind:tap="wxLogin" type="warn">微信登录</button>
+    授权码:{{code}}
   </view>
+  <view>
+    <button bind:tap="sendRequest" type="default">发送请求</button>
+  </view>
+</view>
