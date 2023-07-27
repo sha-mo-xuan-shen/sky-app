@@ -1,6 +1,11 @@
 <!--index.wxml-->
-<scroll-view class="scrollview" scroll-y type="list">
   <view class="container">
-    Weixin
+  <view>
+    {{msg}}
   </view>
-</scroll-view>
+  <view>
+    <button type="primary" bind:tap="getUserInfo">获取用户信息</button>
+    昵称:{{nickName}}
+    <image style="width: 100px;height: 100px;" src="{{url}}"></image>
+  </view>
+  </view>
